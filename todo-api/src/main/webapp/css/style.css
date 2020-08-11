@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#login_bar{
+    position:absolute;
+    top: 3%;
+    right: 9%;
+}
+#login{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+    width: 500px;
+    height: 400px;
+    background: red;
+}
+#login input{
+    display: block;
+}
+#update{
+    position: absolute;
+    right: 5%;
+    top: 15%;
+}
+#joke{
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 300px;
+    top: 100px;
+    left: -300px;
+}
+#bg img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 518px;
+    height: 515px;
+    background-size: cover;
+    opacity: 50%;
+    padding-top: 10%;
+    z-index: -1;
+}
+#task{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 518px;
+    height: 515px;
+    z-index: 0;
+}
+#todo{
+    text-align: center;
+    font-size: 50px;
+}
+#task input{
+    position: relative;
+    left: 109px;
+    width: 300px;
+    height: 30px;
+    border-radius: 9px;
+    padding: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    z-index: 1;
+}
+#task ul{
+    width: 300px;
+    list-style-type: none;
+    position: relative;
+    left: 109px;
+}
+#task ul li{
+    display: block;
+    width: 300px;
+    padding: 8px 8px;
+    border-bottom: 1px solid black;
+}
+#task ul li button{
+    display: none;
+    position: absolute;
+    border-style: none;
+    outline: 0;
+    border: 0;
+    right: 0;
+}
+#task ul li button:hover{
+    color: black;
+}
+#task ul li button::after{
+    content: "x";
+}
+#task ul li:hover button{
+    display: inline;
+    color: red;
+}
+#f1{
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    left: 120px;
+}
