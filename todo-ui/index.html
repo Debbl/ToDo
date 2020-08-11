@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div id="login_bar" @click="login()" @onchange="getTasks()" v-text="isRegistered ? uname: '登录'"></div>
+        <div id="login" v-if="isLogin">
+            <img src="./bg/login_bg.jpg" ondragstart="return false;">
+            <div id="unamel">用户名</div>
+            <input type="text" id="inputname" v-model:value="uname" @keyup.enter="getUserData()">
+            <input type="button" id="b_login" value="登录" @click="getUserData()">
+        </div>
+        <div id="task">
+            <button id="update" @click="getTasks()" v-if="!isLogin">更新</button>
+            <div id="joke" @click="getJoke()">&nbsp;&nbsp;{{ joke }}</div>
+            <div id="bg" onload="onload()"><img src="./bg/bg3.jpg" ondragstart="return false;"></div>
+            <div id="todo">To&nbsp;&nbsp;Do</div>
+            <input type="text" v-model="task" @keyup.enter="add()" placeholder="请输入任务">
+            <ul>
+                <li v-for="(item,index) in tasksList">
+                    <span>&nbsp;·&nbsp;&nbsp;{{ item }}</span>
+                    <button @click="remove(index)"></button>
+                </li>
+            </ul>
+            <span id="f1">总计:&nbsp;{{ tasksSum }}</span>
+        </div>
+    </div>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/vue.min.js"></script>
+    <script src="./js/todo.js"></script>
+</body>
+
+</html>
