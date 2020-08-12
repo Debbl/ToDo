@@ -6,7 +6,7 @@
 
   <filter>
     <filter-name>CorsFilter</filter-name>
-    <filter-class>top.qwebnm.api.CORSFilter</filter-class>
+    <filter-class>top.qwebnm.controller.CORSFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>CorsFilter</filter-name>
@@ -15,15 +15,15 @@
 
   <servlet>
     <servlet-name>api</servlet-name>
-    <servlet-class>top.qwebnm.api.getUserData</servlet-class>
+    <servlet-class>top.qwebnm.controller.getUserData</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>getUserTasks</servlet-name>
-    <servlet-class>top.qwebnm.api.getUserTasks</servlet-class>
+    <servlet-class>top.qwebnm.controller.getUserTasks</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>deleteTask</servlet-name>
-    <servlet-class>top.qwebnm.api.deleteTask</servlet-class>
+    <servlet-class>top.qwebnm.controller.deleteTask</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>api</servlet-name>

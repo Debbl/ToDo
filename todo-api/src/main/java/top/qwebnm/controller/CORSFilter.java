@@ -1,4 +1,4 @@
-package top.qwebnm.api;
+package top.qwebnm.controller;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletResponse;

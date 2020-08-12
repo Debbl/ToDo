@@ -1,4 +1,4 @@
-package top.qwebnm.api;
+package top.qwebnm.controller;
 
 import net.sf.json.JSONObject;
 
