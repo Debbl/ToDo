@@ -3,9 +3,7 @@ package top.qwebnm.dao;
 import net.sf.json.JSONObject;
 import top.qwebnm.entity.Users;
 import top.qwebnm.utils.DBUtil;
-
 import java.sql.*;
-import java.util.ResourceBundle;
 
 public class UserDao {
 

@@ -3,11 +3,8 @@ package top.qwebnm.controller;
 import net.sf.json.JSONObject;
 import top.qwebnm.dao.UserDao;
 import top.qwebnm.entity.Users;
-
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.*;
-import java.util.ResourceBundle;
 
 @javax.servlet.annotation.WebServlet(name = "getUserData")
 public class getUserData extends javax.servlet.http.HttpServlet {
