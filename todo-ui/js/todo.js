@@ -64,6 +64,7 @@ var app = new Vue({
                         // alert(that.uid);
                         console.log(that.uname);
                         console.log(that.uid);
+                        that.$options.methods.updateData(that);
                     } else if (that.isAddUser){
                         alert("您未注册用户,以为您自动注册用户。")
                         axios.get(that.apiUrl+"/user?uname="+that.uname).then(function(response){
@@ -73,6 +74,7 @@ var app = new Vue({
                             that.isRegistered = true;
                             // console.log(that.uname);
                             // console.log(that.uid);
+                            that.$options.methods.updateData(that);
                         },function (err) {  })
                     } else {
                         alert("未知错误！！！")
