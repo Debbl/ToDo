@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="run.aiwan.dao.TaskDao">
+
+    <select id="queryTask" resultType="run.aiwan.entity.Task">
+        select count,task,tuid from todo_tasks where tuid = #{tuid}
+    </select>
+
+    <insert id="addTask">
+        insert into todo_tasks(task,tuid) values(#{task},#{tuid})
+    </insert>
+
+    <delete id="deleteTask">
+        delete from todo_tasks where count = #{count}
+    </delete>
+</mapper>
